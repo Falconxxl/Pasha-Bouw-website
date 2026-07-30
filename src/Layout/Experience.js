@@ -6,25 +6,25 @@ const stats = [
         id: "years",
         value: 20,
         suffix: "+",
-        label: "Années d’expérience cumulées",
-    },
-    {
-        id: "experts",
-        value: 2,
-        suffix: "",
-        label: "Experts QHSE certifiés",
-    },
-    {
-        id: "solutions",
-        value: 100,
-        suffix: "%",
-        label: "Solutions adaptées à vos besoins",
+        label: "Jaar vakervaring",
     },
     {
         id: "projects",
-        value: 500,
+        value: 50,
         suffix: "+",
-        label: "Projets et missions accompagnés",
+        label: "Succesvol afgeronde projecten",
+    },
+    {
+        id: "renovations",
+        value: 40,
+        suffix: "+",
+        label: "Woning-, badkamer- en keukenrenovaties",
+    },
+    {
+        id: "quality",
+        value: 100,
+        suffix: "%",
+        label: "Kwaliteit en klantgericht maatwerk",
     },
 ];
 

@@ -10,7 +10,7 @@
     min-height: 100vh;
     /*background-color: violet;*/
     /*background-color: #f8f8f8;*/
-    /*background-color: white;*/
+    background-color: white;
     color: #222;
     font-family: "Poppins", sans-serif;
     padding: 50px 20px;
@@ -30,7 +30,7 @@
     font-weight: 800;
     margin-bottom: 30px;
     /*color: #1c6077;*/
-    color: red;
+    color: black;
     font-family: "Poppins", sans-serif;
 }
 
@@ -77,7 +77,7 @@
     font-weight: 600;
     margin-bottom: 20px;
     font-family: "Poppins", sans-serif;
-    color: red;
+    color: black;
 }
 
 .section-header p {
@@ -129,6 +129,7 @@
     inset: 0;
     z-index: 999;
     background-color: rgba(0, 0, 0, 0.9);
+    /*background-color: rgba(0, 0, 0, 0.9);*/
     display: flex;
     align-items: center;
     justify-content: center;
@@ -145,7 +146,7 @@
     align-items: center;
     background-color: #1c1c1c;
     border-radius: 50px;
-    border: 2px solid #f3bb2f;
+    border: 2px solid red;
     padding: 50px;
 }
 
@@ -156,7 +157,7 @@
     /*height: auto;*/
     /*border-radius: 10px;*/
     object-fit: contain;
-    border: 2px solid #f3bb2f;
+    border: 2px solid red;
     border-radius: 50px;
 }
 
@@ -165,7 +166,7 @@
 .nav-btn {
     background: none;
     border: none;
-    color: #f3bb2f;
+    color: red;
     cursor: pointer;
     transition: transform 0.3s ease, color 0.3s ease;
     font-size: 2rem;
@@ -201,7 +202,7 @@
 
 .close-btn:hover,
 .nav-btn:hover {
-    color: #ffd84a;
+    color: red;
     /*transform: scale(1.2);*/
 
 }
@@ -230,7 +231,7 @@
 }
 
 .thumbnails img.active {
-    border-color: #f3bb2f;
+    border-color: red;
 }
 
 
@@ -313,7 +314,7 @@
         }
 
         .close-btn:hover {
-            color: #f3bb2f;
+            color: red;
         }
     }
 

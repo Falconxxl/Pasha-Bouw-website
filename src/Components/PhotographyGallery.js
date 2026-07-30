@@ -152,8 +152,12 @@ function PhotographyGallery() {
             </main>
 
             {isOpen && (
-                <div className="modal">
-                    <div className="modal-content">
+                <div className="modal"
+                     // style={{backgroundColor:"white"}}
+                >
+                    <div className="modal-content"
+                         style={{backgroundColor:"white"}}
+                    >
                         <button className="close-btn" onClick={closeModal}>
                             <i className="fa-solid fa-circle-xmark"></i>
                         </button>

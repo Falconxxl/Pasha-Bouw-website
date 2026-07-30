@@ -1,0 +1,236 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.Container-ServiceHome {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 70px 20px 70px;
+    gap: 50px;
+    background: #fff;
+}
+
+/* ---------------- TITRE ---------------- */
+
+.title-ServiceHome{
+    font-size: clamp(35px,4vw,48px);
+    font-weight:800;
+    font-family:"Poppins",sans-serif;
+    text-align:center;
+}
+
+.title-ServiceHome-mobile{
+    display:none;
+}
+
+/* ---------------- CARD ---------------- */
+
+.Container-ServiceHome-single{
+
+    width:min(1300px,90%);
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    gap:60px;              /* <<< espace réduit entre image et texte */
+
+    padding:35px;
+
+    /*border:1px solid #ddd;*/
+    border:1px solid #ddd;
+    border-radius:12px;
+}
+
+/* ---------------- IMAGE ---------------- */
+
+.media-Container-ServiceHome-single{
+
+    flex:1;
+    max-width:520px;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.image-mike_brenda-home{
+
+    width:100%;
+    border-radius:12px;
+    display:block;
+}
+
+/* ---------------- TEXTE ---------------- */
+
+.text-Container-ServiceHome-single{
+
+    flex:1;
+    max-width:520px;
+}
+
+.text-Container-ServiceHome-single h3{
+
+    display:flex;
+    align-items:center;
+    gap:15px;
+
+    font-size:36px;
+    font-family:"Poppins",sans-serif;
+    font-weight:700;
+
+    margin-bottom:15px;
+}
+
+.icon_home_services{
+
+    width:55px;
+    flex-shrink:0;
+}
+
+.text-Container-ServiceHome-single h2{
+
+    font-size:24px;
+    margin-bottom:18px;
+    font-family:"Poppins",sans-serif;
+}
+
+.text-Container-ServiceHome-single p{
+
+    font-size:17px;
+    font-weight: 300;
+    line-height:1.7;
+    margin-bottom:35px;
+    font-family:"Poppins",sans-serif;
+}
+
+.btn-text-Container-ServiceHome-single{
+
+    display:inline-flex;
+    align-items:center;
+    gap:10px;
+
+    background:red;
+    color:white;
+
+    padding:15px 35px;
+
+    border-radius:8px;
+
+    text-decoration:none;
+
+    font-family:"Poppins",sans-serif;
+    font-weight:600;
+
+    transition:.3s;
+}
+
+.btn-text-Container-ServiceHome-single:hover{
+
+    background:black;
+}
+
+/* ==============================
+   GRANDES TABLETTES
+================================ */
+
+@media (max-width:1200px){
+
+    .Container-ServiceHome-single{
+
+        gap:40px;      /* encore moins d'espace */
+
+        width:95%;
+    }
+
+    .text-Container-ServiceHome-single h3{
+
+        font-size:30px;
+    }
+
+}
+
+/* ==============================
+   TABLETTES
+================================ */
+
+@media (max-width:992px){
+
+    .Container-ServiceHome-single{
+
+        gap:30px;
+    }
+
+}
+
+/* ==============================
+   MOBILE
+================================ */
+
+@media (max-width:768px){
+
+    .title-ServiceHome{
+        display:none;
+    }
+
+    .title-ServiceHome-mobile{
+
+        display:block;
+
+        font-size:38px;
+
+        font-family:"Poppins",sans-serif;
+
+        font-weight:800;
+
+        text-align:center;
+    }
+
+    .Container-ServiceHome-single{
+
+        flex-direction:column;
+
+        width:94%;
+
+        gap:25px;
+
+        padding:25px;
+    }
+
+    .media-Container-ServiceHome-single,
+    .text-Container-ServiceHome-single{
+
+        max-width:100%;
+        width:100%;
+    }
+
+    .text-Container-ServiceHome-single h3{
+
+        font-size:28px;
+    }
+
+    .text-Container-ServiceHome-single h2{
+
+        font-size:22px;
+    }
+
+    .text-Container-ServiceHome-single p{
+
+        font-size:16px;
+    }
+
+    .icon_home_services{
+
+        width:42px;
+    }
+
+    .btn-text-Container-ServiceHome-single{
+
+        width:100%;
+        justify-content:center;
+    }
+
+}

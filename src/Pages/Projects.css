@@ -1,0 +1,274 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.Container-Portfolio {
+    width: 100%;
+    height: 90vh;
+    background-color: darkred;
+    box-sizing: border-box;
+    /*background-image: url("../Assets/banner19.jpg");*/
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/*-----------Banner--------------------------------*/
+
+.Container-BadkamerKozijnen {
+    position: relative;
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    background-color: red;
+    padding: 260px 100px 100px 100px;
+    box-sizing: border-box;
+}
+
+.hero-content-BadkamerKozijnen {
+    max-width: 100%;
+}
+
+.hero-content-BadkamerKozijnen h1 {
+    font-family: "Poppins", sans-serif;
+    font-size: clamp(2.5rem, 8vw, 150px);
+    font-weight: 600;
+    color: black;
+    line-height: 1.1;
+    margin-bottom: 50px;
+    word-wrap: break-word;
+}
+
+.BadkamerKozijnen-paragraphe-desktop {
+    display: block;
+    font-family: "Montserrat", sans-serif;
+    font-size: clamp(1rem, 2vw, 1.4rem);
+    line-height: 1.6;
+    color: black;
+    margin-bottom: 70px;   /* espace entre p et bouton */
+    font-weight: 500;
+    max-width: 700px;
+}
+
+.BadkamerKozijnen-paragraphe-mobile {
+    display: none;
+}
+
+.cta-btn-BadkamerKozijnen {
+    display: inline-block;
+    text-decoration: none;
+    padding: 15px 40px;
+    font-family: "Figtree", sans-serif;
+    border: 2px solid white;
+    background-color: red;
+    border-radius: 10px;
+    font-size: 20px;
+    color: white;
+    font-weight: 600;
+    cursor: pointer;
+    white-space: nowrap;
+}
+
+.cta-btn-BadkamerKozijnen:hover {
+    background-color: black;
+    color: white;
+    border: 2px solid white;
+}
+
+/*--------------------------------------------*/
+
+/*------Description--------*/
+
+.AudioVisual-Description {
+    background-color: #f2f2f2;
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    /*margin-bottom: 50px;*/
+    padding-bottom: 50px;
+    padding-top: 50px;
+    /*background-color: #141414;*/
+    /*background-color: #f3bb2f;*/
+    gap: 30px;
+}
+
+.AudioVisual-Description-left {
+    /*background-color: #141414;*/
+    background-color: black;
+    width: 700px;
+    color: white;
+    height: auto;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 30px;
+    border-left: 1px solid #f3bb2f;
+}
+
+.AudioVisual-Description-left h1 {
+    font-family: "Poppins", sans-serif;
+    /*color: #1c6077;*/
+    font-size: 52px;
+    text-align: left;
+    /*color: #fcd552;*/
+    /*color: white;*/
+    font-weight: 800;
+}
+
+.AudioVisual-Description-left p {
+    font-family: "Poppins", sans-serif;
+    color: black;
+    margin-top: 20px;
+    font-size: 30px;
+    font-weight: 500;
+    /*color: #1c6077;*/
+    /*color: #fcd552;*/
+}
+
+.AudioVisual-Description-Right {
+    background-color: red;
+    width: 700px;
+    box-sizing: border-box;
+    min-height: 180px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    border-radius: 30px;
+    /*border-left: 1px solid #f3bb2f;*/
+}
+
+.AudioVisual-Description-Right p {
+    font-family: "Poppins", sans-serif;
+    font-size: 18px;
+    color: white;
+    font-weight: 300;
+    margin: 0;
+    max-width: 100%;
+}
+
+/*-------------------------------------------*/
+
+@media screen and (max-width: 940px) {
+
+    .Container-Portfolio {
+        width: 100%;
+        height: 80vh;
+
+        /*background-color: yellow;*/
+        box-sizing: border-box;
+        /*background-image: url("../Assets/banner_mobile3.jpg");*/
+        background-repeat: no-repeat;
+        background-size: cover;
+        display: flex;
+        flex-direction: column;
+        padding-top: 150px;
+        /*justify-content: center;*/
+    }
+
+    .Container-BadkamerKozijnen {
+        padding: 180px 60px 80px 60px;
+    }
+
+    .hero-content-BadkamerKozijnen h1 {
+        margin-bottom: 30px;
+    }
+
+    .BadkamerKozijnen-paragraphe-desktop {
+        margin-bottom: 45px;
+        max-width: 100%;
+    }
+}
+
+/*----------Tablette--------------------------------*/
+@media screen and (max-width: 768px) {
+
+    .AudioVisual-Description {
+        padding: 5%;
+
+    }
+
+    .AudioVisual-Description-Right {
+        padding: 10%;
+    }
+
+    .Container-BadkamerKozijnen {
+        padding: 200px 24px 50px 24px;
+        background-color: red;
+    }
+
+    .hero-content-BadkamerKozijnen h1 {
+        margin-bottom: 25px;
+    }
+
+    .BadkamerKozijnen-paragraphe-desktop {
+        margin-bottom: 40px;
+    }
+
+    .cta-btn-BadkamerKozijnen {
+        padding: 14px 32px;
+        font-size: 18px;
+    }
+}
+
+/*----------Mobile--------------------------------*/
+@media screen and (max-width: 600px) {
+
+    .AudioVisual-Description {
+        padding-left: 5%;
+        padding-right: 5%;
+        /*background-color: #0091ff;*/
+        padding-bottom: 70px;
+        padding-top: 70px;
+    }
+
+    .Container-BadkamerKozijnen {
+        padding: 200px 24px 70px 24px;
+        background-color: red;
+    }
+
+    .hero-content-BadkamerKozijnen h1 {
+        font-size: clamp(2rem, 10vw, 3rem);
+        margin-bottom: 20px;
+        line-height: 1.15;
+    }
+
+    .BadkamerKozijnen-paragraphe-desktop {
+        font-size: 1rem;
+        line-height: 1.5;
+        margin-bottom: 35px;
+    }
+
+    .cta-btn-BadkamerKozijnen {
+        display: block;
+        width: fit-content;
+        margin: 0 auto;
+        padding: 14px 24px;
+        font-size: 16px;
+
+    }
+}
+
+/*----------Petits mobiles--------------------------------*/
+@media screen and (max-width: 400px) {
+
+    .Container-BadkamerKozijnen {
+        padding: 200px 24px 50px 24px;
+        background-color: red;
+    }
+
+    .hero-content-BadkamerKozijnen h1 {
+        font-size: clamp(1.8rem, 11vw, 2.5rem);
+    }
+
+    .BadkamerKozijnen-paragraphe-desktop {
+        font-size: 0.9rem;
+    }
+
+
+}

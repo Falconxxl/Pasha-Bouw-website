@@ -1,0 +1,228 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* ================================
+   BASE (desktop)
+================================ */
+.navbar-hamburger {
+    position: relative;
+    z-index: 2000;
+}
+
+.menu-icon {
+    font-size: 1.8rem;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 1rem;
+    z-index: 2100;
+    position: relative;
+    color: black;
+}
+
+.menu {
+    position: fixed;
+    top: 0;
+    left: -100%;
+    height: 100vh;
+    width: 100%;
+    background: white;
+    color: #111;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding-top: 40px;
+    transition: left 0.3s ease-in-out;
+    font-family: 'Montserrat', sans-serif;
+    pointer-events: none;
+}
+
+.menu.open {
+    left: 0;
+    pointer-events: auto;
+}
+
+.menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+}
+
+.menu ul li {
+    width: 100%;
+}
+
+.menu-button {
+    width: 100%;
+    text-align: left;
+    padding: 14px 20px;
+    font-size: 20px;
+    font-weight: 600;
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: #111;
+    font-family: "Montserrat", sans-serif;
+}
+
+.submenu {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.4s ease-in-out;
+    background: white;
+}
+
+.submenu.open {
+    max-height: 400px;
+}
+
+.submenu li {
+    padding: 10px 40px;
+    font-size: 15px;
+    font-weight: 500;
+    color: #1c6077;
+}
+
+/* ================================
+   MOBILE (max 945px)
+================================
+   Navbar2Mobile      → top: 0,    height: 50px
+   NavbarMenuMobile   → top: 50px, height: 9vh
+   Menu hamburger     → top: calc(50px + 9vh)
+================================ */
+@media screen and (max-width: 945px) {
+
+    .navbar-hamburger {
+        position: relative;
+        z-index: 2000;
+    }
+
+    .menu-icon {
+        background: none;
+        border: none;
+        cursor: pointer;
+        z-index: 2100;
+        position: relative;
+        color: black;
+        font-weight: 800;
+        padding: 0;
+        font-size: 1.6rem;
+    }
+
+    .menu {
+        position: fixed;
+        top: calc(50px + 9vh);
+        left: -100%;
+        height: calc(100vh - 50px - 9vh);
+        width: 100%;
+        background: red;
+        color: white;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        padding-top: 0;
+        margin-top: 0;
+        transition: left 0.3s ease-in-out;
+        font-family: 'Montserrat', sans-serif;
+        overflow-y: auto;
+        pointer-events: none;
+    }
+
+    .menu.open {
+        left: 0;
+        pointer-events: auto;
+    }
+
+    .menu ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        width: 100%;
+    }
+
+    .menu ul li {
+        width: 100%;
+    }
+
+    .menu-button,
+    .menu-button:link,
+    .menu-button:visited {
+        display: block;
+        width: 100%;
+        text-align: left;
+        padding: 14px 24px;
+        font-size: 20px;
+        font-weight: 600;
+        background: none;
+        border: none;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+        cursor: pointer;
+        color: white;
+        font-family: "Montserrat", sans-serif;
+        text-decoration: none;
+    }
+
+    .submenu {
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.4s ease-in-out;
+        background-color: #1c1c1c;
+    }
+
+    .submenu.open {
+        max-height: 500px;
+    }
+
+    .submenu li {
+        padding: 0;
+        margin: 0;
+        list-style: none;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+    }
+
+    .submenu li:last-child {
+        border-bottom: none;
+    }
+
+    .Submenu-button-hamburger {
+        display: block;
+        width: 100%;
+        padding: 9px 40px;
+        font-size: 15px;
+        font-weight: 500;
+        color: white;
+        text-decoration: none;
+        font-family: "Montserrat", sans-serif;
+        background-color: #1c1c1c;
+    }
+
+    .Submenu-button-hamburger:hover {
+        background-color: #2a2a2a;
+    }
+}
+
+/* ================================
+   PETITS MOBILES (max 480px)
+================================ */
+@media screen and (max-width: 480px) {
+
+    .menu {
+        top: calc(50px + 9vh);
+        height: calc(100vh - 100px);
+    }
+
+    .menu-button,
+    .menu-button:link,
+    .menu-button:visited {
+        font-size: 18px;
+        padding: 15px 20px;
+    }
+
+    .Submenu-button-hamburger {
+        font-size: 14px;
+        padding: 10px 36px;
+    }
+}

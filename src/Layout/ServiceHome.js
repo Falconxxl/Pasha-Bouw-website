@@ -24,8 +24,6 @@ import icon_Elektrawerk from "../Images/icon_elektrawerk.jpg";
 import {NavLink} from "react-router-dom";
 
 
-
-
 function ServiceHome () {
 
 
@@ -66,10 +64,12 @@ function ServiceHome () {
                         Of het nu gaat om renovatie of vervanging, wij creëren oplossingen
                         die perfect aansluiten bij uw wensen en uw woning meer comfort geven.
                     </p>
-                    <NavLink to='/Webdesign' className="btn-text-Container-ServiceHome-single">
+
+                    <NavLink to='/BadkamerKozijnen' className="btn-text-Container-ServiceHome-single">
                         Ontdek onze dienst
                         <i className="fa-solid fa-arrow-right"></i>
                     </NavLink>
+
 
                 </div>
 
@@ -98,7 +98,7 @@ function ServiceHome () {
                         dat past bij uw stijl. Van kleine schilderwerken tot volledige renovaties,
                         wij maken uw woning weer helemaal verzorgd.
                     </p>
-                    <NavLink to='/Webdesign' className="btn-text-Container-ServiceHome-single">
+                    <NavLink to='#' className="btn-text-Container-ServiceHome-single">
                         Ontdek onze dienst
                         <i className="fa-solid fa-arrow-right"></i>
                     </NavLink>
@@ -129,7 +129,7 @@ function ServiceHome () {
                         ruimtes in uw woning. Met precisie en vakmanschap creëren wij een stijlvolle
                         en duurzame afwerking die perfect aansluit bij uw wensen.
                     </p>
-                    <NavLink to='/Webdesign' className="btn-text-Container-ServiceHome-single">
+                    <NavLink to='#' className="btn-text-Container-ServiceHome-single">
                         Ontdek onze dienst
                         <i className="fa-solid fa-arrow-right"></i>
                     </NavLink>
@@ -160,7 +160,7 @@ function ServiceHome () {
                         Van tegelwerk en sanitair tot de volledige afwerking: wij realiseren
                         een badkamer waarin kwaliteit, functionaliteit en design samenkomen
                     </p>
-                    <NavLink to='/Webdesign' className="btn-text-Container-ServiceHome-single">
+                    <NavLink to='#' className="btn-text-Container-ServiceHome-single">
                         Ontdek onze dienst
                         <i className="fa-solid fa-arrow-right"></i>
                     </NavLink>
@@ -191,7 +191,7 @@ function ServiceHome () {
                         uitstraling. Wij zorgen voor gladde wanden en plafonds die de perfecte
                         basis vormen voor een prachtig interieur.
                     </p>
-                    <NavLink to='/Webdesign' className="btn-text-Container-ServiceHome-single">
+                    <NavLink to='#' className="btn-text-Container-ServiceHome-single">
                         Ontdek onze dienst
                         <i className="fa-solid fa-arrow-right"></i>
                     </NavLink>
@@ -223,7 +223,7 @@ function ServiceHome () {
                         Van aanpassingen en afwerking tot complete renovaties: wij creëren een keuken
                         waarin comfort en uitstraling centraal staan.
                     </p>
-                    <NavLink to='/Webdesign' className="btn-text-Container-ServiceHome-single">
+                    <NavLink to='#' className="btn-text-Container-ServiceHome-single">
                         Ontdek onze dienst
                         <i className="fa-solid fa-arrow-right"></i>
                     </NavLink>
@@ -254,7 +254,7 @@ function ServiceHome () {
                         Wij plaatsen en werken parketvloeren professioneel af voor een
                         duurzaam resultaat dat jarenlang meegaat.
                     </p>
-                    <NavLink to='/Webdesign' className="btn-text-Container-ServiceHome-single">
+                    <NavLink to='#' className="btn-text-Container-ServiceHome-single">
                         Ontdek onze dienst
                         <i className="fa-solid fa-arrow-right"></i>
                     </NavLink>
@@ -285,7 +285,7 @@ function ServiceHome () {
                         aanpassen aan uw behoeften. Van kleine aanpassingen tot grotere projecten,
                         wij begeleiden elke stap met vakmanschap en aandacht voor detail.
                     </p>
-                    <NavLink to='/Webdesign' className="btn-text-Container-ServiceHome-single">
+                    <NavLink to='#' className="btn-text-Container-ServiceHome-single">
                         Ontdek onze dienst
                         <i className="fa-solid fa-arrow-right"></i>
                     </NavLink>
@@ -316,7 +316,7 @@ function ServiceHome () {
                         Van nieuwe aansluitingen tot het aanpassen van bestaande installaties:
                         wij zorgen voor een veilige en betrouwbare oplossing voor uw woning.
                     </p>
-                    <NavLink to='/Webdesign' className="btn-text-Container-ServiceHome-single">
+                    <NavLink to='#' className="btn-text-Container-ServiceHome-single">
                         Ontdek onze dienst
                         <i className="fa-solid fa-arrow-right"></i>
                     </NavLink>

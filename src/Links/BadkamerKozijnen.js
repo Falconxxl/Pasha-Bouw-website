@@ -126,10 +126,17 @@ function BadkamerKozijnen() {
 
                             </p>
 
-                            <NavLink to='/Webdesign' className="btn-text-Container-BadkamerKozijnen-page-single">
+                            {/*<NavLink to='/Webdesign' className="btn-text-Container-BadkamerKozijnen-page-single">*/}
+                            {/*    Vraag een offerte aan*/}
+                            {/*    <i className="fa-solid fa-arrow-right"></i>*/}
+                            {/*</NavLink>*/}
+
+                            <button className="btn-text-Container-BadkamerKozijnen-page-single"
+                                    onClick={() => setOpenQuote(true)}
+                            >
                                 Vraag een offerte aan
                                 <i className="fa-solid fa-arrow-right"></i>
-                            </NavLink>
+                            </button>
 
 
                             <RequestAQuoteModal

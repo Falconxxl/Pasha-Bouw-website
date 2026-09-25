@@ -66,10 +66,7 @@ function ContainerBanner2() {
                 </p>
 
 
-
-
                 <div className="hero-buttons">
-
 
                     <Link
                         to="Container-ServiceHome"
@@ -94,9 +91,6 @@ function ContainerBanner2() {
 
                     </Link>
 
-
-
-
                     <button
 
                         className="hero-btn quote-btn"
@@ -112,11 +106,7 @@ function ContainerBanner2() {
 
                     </button>
 
-
                 </div>
-
-
-
 
                 <RequestAQuoteModal
 
@@ -129,8 +119,6 @@ function ContainerBanner2() {
                     <RequestAQuote />
 
                 </RequestAQuoteModal>
-
-
 
             </div>
 
